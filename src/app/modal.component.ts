@@ -72,7 +72,6 @@ export class NgbdModalContent {
               // console.log(val);
               let evolution: any = val.chain;
               while (evolution.evolves_to[0]) {
-                console.log(outer.name, evolution.species.name, evolution.evolves_to[0].species.name)
                 if (outer.name == evolution.species.name) {
                   return evolution.evolves_to[0].species;
                 }
