@@ -7,8 +7,6 @@ import { NgbModal} from '@ng-bootstrap/ng-bootstrap';
 import { NgbdModalContent } from '../modal.component';
 import * as fa from '@fortawesome/free-solid-svg-icons';
 
-
-
 interface ApiData {
   count: number;
   next: string;
