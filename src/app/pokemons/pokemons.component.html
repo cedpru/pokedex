@@ -1,0 +1,17 @@
+
+<div class="container-fluid" *ngIf="apiData | async as data">
+  <div class="d-flex justify-content-between bg-custom-pokemon">
+    <div class="ml-auto flex"><button *ngIf="data.previous" type="button" (click)="getPokemons(data.previous)" class="btn"><fa-icon [icon]="faPrev"></fa-icon></button></div>
+    <div class="text-center pokedex-title">Pokedex {{ data.count }} known Pokemon!</div>
+    <div class="mr-auto flex"><button *ngIf="data.next" type="button" (click)="getPokemons(data.next)" class="btn"><fa-icon [icon]="faNext"></fa-icon>
+    </button></div>
+  </div>
+
+  <div class="container-fluid pokedex">
+    <ul class="list-group">
+      <li *ngFor="let item of data.results" class="list-group-item">
+        <button type="button" (click)="onClickPokemon(item.url)" class="list-group-item-action btn btn-lg btn-custom-pokemon">{{ item.name }}</button>
+      </li>
+    </ul>
+  </div>
+</div>

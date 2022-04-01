@@ -1,0 +1,41 @@
+.div-img {
+  border: 1px sandybrown solid;
+  display: flex;
+  margin: auto;
+  width: 400px;
+}
+
+.div-img > img {
+  width: 100%;
+  margin: auto;
+}
+
+.div-type-title {
+  padding: 5px 0;
+  background-color: #43557c;
+  color: white;
+  font-weight: bold;
+}
+
+.div-types {
+  border: 1px rgb(96, 165, 244) solid;
+  width: 400px;
+  margin: auto;
+}
+
+.div-evolution-title {
+  padding: 5px 0;
+  background-color: cornflowerblue;
+  color: white;
+  font-weight: bold;
+}
+
+.div-evolution {
+  border: 1px rgb(29, 116, 82) solid;
+  width: 400px;
+  margin: auto;
+}
+
+.btn-custom-pokemon > fa-icon {
+  padding-left: 10px;
+}

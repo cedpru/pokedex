@@ -1,0 +1,25 @@
+  <ng-container *ngIf="allData">
+    <div class="modal-header">
+      <h4 class="modal-title">{{ allData.name.toUpperCase() }}</h4>
+      <button type="button" class="btn-close" aria-label="Close" (click)="activeModal.dismiss()"></button>
+    </div>
+    <div class="modal-body text-center">
+      <div class="div-img">
+        <img class="image-pokemon" src="{{ allData.sprites.other.dream_world.front_default }}">
+      </div>
+      <div class="div-types">
+        <div class="div-type-title">TYPE(S)</div>
+        <div class="div-type" *ngFor="let item of allData.types">{{ item.type.name.toUpperCase() }}</div>
+      </div>
+      <div class="div-evolution" *ngIf="allData.evolution">
+        <div class="div-evolution-title">EVOLUTION</div>
+        <button type="button" (click)="reloadData(allData.evolution.name);" class="list-group-item-action btn btn-custom-pokemon">{{ allData.evolution.name.toUpperCase() }}<fa-icon [icon]="faEvolution"></fa-icon></button>
+      </div>
+    </div>
+    <div class="modal-footer">
+      <button type="button" class="btn btn-outline-dark" (click)="activeModal.close()">Close</button>
+    </div>
+  </ng-container>
+  <ng-template #loading>
+    ...Loading
+  </ng-template>

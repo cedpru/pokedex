@@ -1,0 +1,12 @@
+nav {
+  background-color: #55A3AB;
+}
+
+.navbar-brand:link,
+.navbar-brand:hover,
+.navbar-brand:visited
+.navbar-brand:active {
+  padding-left: 10px;
+  text-transform: uppercase;
+  color: white;
+}
