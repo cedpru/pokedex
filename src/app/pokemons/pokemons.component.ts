@@ -54,7 +54,7 @@ export class PokemonsComponent implements OnInit {
   }
 
   onClickPokemon(urlPokemon: String) {
-    const modalRef = this.modalService.open(NgbdModalContent);
+    const modalRef = this.modalService.open(NgbdModalContent, { modalDialogClass: 'modal-fullscreen', windowClass: 'modal-fullscreen' });
     modalRef.componentInstance.url = urlPokemon;
   }
 }
