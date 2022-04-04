@@ -1,8 +1,7 @@
 .div-img {
-  border: 1px sandybrown solid;
   display: flex;
   margin: auto;
-  width: 400px;
+  width: 500px;
 }
 
 .div-img > img {
@@ -38,4 +37,8 @@
 
 .btn-custom-pokemon > fa-icon {
   padding-left: 10px;
+}
+
+.modal-body.text-center {
+  background-color: whitesmoke !important;
 }
